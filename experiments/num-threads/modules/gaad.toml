@@ -1,0 +1,2 @@
+[filter]
+allowed_files = ["aachuffmanutil.go", "aacparser.go", "aacsbrtables.go", "aacutils.go", "aacwindowgrouping.go", "bitreader/bitreader.go", "bitreader/errors.go"]
