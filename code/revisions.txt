@@ -1,1 +1,2 @@
 gaad https://github.com/Comcast/gaad 7cb3b3cbc5c5407ad0ff7f7b2d303e5c521748b5 
+shoco https://github.com/Ed-von-Schleck/shoco 4dee0fc850cdec2bdb911093fe0a6a56e3623b71
