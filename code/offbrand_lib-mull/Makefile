@@ -12,10 +12,10 @@ CLASSES = src/classes
 TESTS = src/tests
 
 # Compiler Info
-AR = llvm-ar
+AR = llvm-ar-12
 ARFLAGS = rvs
-CC = clang
-CFLAGS = -Wall -Wextra --target=wasm32-wasi --sysroot=/usr/share/wasi-sysroot -O0 -g  #Common flags for all
+CC = clang-12
+CFLAGS = -Wall -Wextra -O0 -fexperimental-new-pass-manager  -fpass-plugin=/usr/lib/mull-ir-frontend-12  -g -grecord-command-line  #Common flags for all
 OFLAGS = $(CFLAGS) -c	 #Flags for .o output files
 # common dependencies for many classes/tests
 TEST_DEP = $(LIB_ARCHIVE)
