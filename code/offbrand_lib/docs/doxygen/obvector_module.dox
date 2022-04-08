@@ -1,0 +1,17 @@
+/**
+ * @defgroup obvector obvector
+ * @brief  An array that dynamically resizes when full.
+ *
+ * @details The vector maintains a collection of any Offbrand compatible
+ * class instances in a random access, dynamically sized array. The vector may
+ * contain a heterogenous collection of objs, although some operations such as
+ * sorting may require the vector to be a homogenous collection.
+ *
+ * @{
+ * @file obvector.h
+ * @file obvector_private.h
+ * @file obvector.c
+ * @file obvector_test.c
+ * @}
+ */
+

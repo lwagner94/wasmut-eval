@@ -1,0 +1,21 @@
+/**
+ * @defgroup obmap obmap
+ * @brief Container class that stores an Offbrand compatible class instance
+ * using another Offbrand compatible class instance as a key
+ *
+ * @details An obmap uses key-value based storage to provide constant lookup
+ * and insertion times. Maps need not contain instances of only one
+ * class and should handle any collection of classes used as both keys and
+ * values.
+ * The obmap class uses an open addressing collision handling mechanism, which
+ * is responsible for a lesser memory overhead compared to separate chaining at
+ * the expense of acceptable load factor and O(n) key removal
+ *
+ * @{
+ * @file obmap.h
+ * @file obmap_private.h
+ * @file obmap.c
+ * @file obmap_test.c
+ * @}
+ */
+

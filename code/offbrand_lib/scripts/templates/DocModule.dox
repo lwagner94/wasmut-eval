@@ -1,0 +1,14 @@
+/**
+ * @addtogroup %CLASSNAME%
+ * @brief  [short class description]
+ *
+ * @details [detailed class description]
+ *
+ * @{
+ * @file %CLASSNAME%.h
+ * @file %CLASSNAME%_private.h
+ * @file %CLASSNAME%.c
+ * @file %CLASSNAME%_test.c
+ * @}
+ */
+

@@ -1,0 +1,17 @@
+/**
+ * @defgroup obdeque obdeque
+ * @brief  A double ended queue container.
+ *
+ * @details The deque maintains a dense collection of objects within a doubly
+ * linked list. A deque may contain a heterogenous collection of objs, although
+ * some operations such as sorting may require the vector to be a homogenous
+ * collection.
+ *
+ * @{
+ * @file obdeque.h
+ * @file obdeque_private.h
+ * @file obdeque.c
+ * @file obdeque_test.c
+ * @}
+ */
+
