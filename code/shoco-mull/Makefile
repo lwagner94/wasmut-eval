@@ -1,4 +1,4 @@
-FLAGS=$(CFLAGS) -std=c99 -Wall
+FLAGS=$(CFLAGS) -std=c99 -O3 -Wall
 SOURCES=shoco.c
 OBJECTS=$(SOURCES:.c=.o)
 HEADERS=shoco.h shoco_model.h
@@ -40,14 +40,16 @@ $(TABLES_DIR)/filepaths.h: $(GENERATOR)
 	find / -print 2>/dev/null | pypy $(GENERATOR) --optimize-encoding -o $@
 
 .PHONY: check
-check: shoco.wasm
+check: tests
 
-shoco.wasm: tests.o $(OBJECTS) $(HEADERS)
+tests: tests.o $(OBJECTS) $(HEADERS)
 	$(CC) $(LDFLAGS) $(OBJECTS) $< -o $@
 
 .PHONY: clean
 clean:
-	rm *.o
+	rm -f *.o
+	rm tests
+	rm shoco
 
 .PHONY: js
 js: shoco.js

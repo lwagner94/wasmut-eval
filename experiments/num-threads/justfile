@@ -3,6 +3,6 @@
 build: 
     #!/usr/bin/env sh
     cd ../../code/gaad 
-    tinygo test -target wasi -o {{invocation_directory()}}/gaad.wasm -c
+    tinygo test -opt z -target wasi -o {{invocation_directory()}}/gaad.wasm -c
     
 
