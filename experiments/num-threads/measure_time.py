@@ -3,20 +3,22 @@
 from sh import wasmut
 from sh import mkdir
 import json 
+import sys
 
-testcase = "modules/gaad"
+
+
+testcase = sys.argv[1]
 
 
 mkdir("-p", "results")
 
 
+file = "modules/" + testcase + ".wasm"
+config = "modules/" + testcase + ".toml"
 
-file = testcase + ".wasm"
-config = testcase + ".toml"
-
-output_file = f"results/{testcase}.csv"
+output_file = f"results/{testcase}_time.csv"
 with open(output_file, "w") as f:
-            f.write(f"threads;time\n")
+    f.write(f"threads;time\n")
 
 for t in [1,2,4,8]:
     

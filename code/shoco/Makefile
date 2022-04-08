@@ -27,24 +27,23 @@ shoco_model.h: $(TABLES_DIR)/words_en.h
 models: $(TABLES)
 
 $(TABLES_DIR)/text_en.h: $(TRAINING_DATA) $(GENERATOR)
-	python $(GENERATOR) $(TRAINING_DATA) -o $@
+	python2 $(GENERATOR) $(TRAINING_DATA) -o $@
 
 $(TABLES_DIR)/words_en.h: $(TRAINING_DATA) $(GENERATOR)
-	python $(GENERATOR) --split=whitespace --strip=punctuation $(TRAINING_DATA) -o $@
+	python2 $(GENERATOR) --split=whitespace --strip=punctuation $(TRAINING_DATA) -o $@
 
 $(TABLES_DIR)/dictionary.h: /usr/share/dict/words $(GENERATOR)
-	python $(GENERATOR) $< -o $@
+	python2 $(GENERATOR) $< -o $@
 
 # Warning: This is *slow*! Use pypy when possible
 $(TABLES_DIR)/filepaths.h: $(GENERATOR)
 	find / -print 2>/dev/null | pypy $(GENERATOR) --optimize-encoding -o $@
 
 .PHONY: check
-check: tests
+check: shoco.wasm
 
-tests: tests.o $(OBJECTS) $(HEADERS)
+shoco.wasm: tests.o $(OBJECTS) $(HEADERS)
 	$(CC) $(LDFLAGS) $(OBJECTS) $< -o $@
-	./tests
 
 .PHONY: clean
 clean:
