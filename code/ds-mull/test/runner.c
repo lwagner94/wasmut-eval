@@ -45,11 +45,11 @@ main(int argc, const char * argv[]) {
 
   for (i = 0; i < count; i++) {
     entry   = tests + i;
-    // start   = clock();
+    start   = clock();
     st      = entry->entry();
-    // end     = clock();
-    // elapsed = (end - start) / CLOCKS_PER_SEC;
-    // total  += elapsed;
+    end     = clock();
+    elapsed = (end - start) / CLOCKS_PER_SEC;
+    total  += elapsed;
 
     if (!st.status) {
       fprintf(stderr,

@@ -12,10 +12,10 @@ CLASSES = src/classes
 TESTS = src/tests
 
 # Compiler Info
-AR = ar
+AR = llvm-ar
 ARFLAGS = rvs
-CC = gcc
-CFLAGS = -Wall -Wextra -g #Common flags for all
+CC = clang
+CFLAGS = -Wall -Wextra --target=wasm32-wasi --sysroot=/usr/share/wasi-sysroot -g -O0  #Common flags for all
 OFLAGS = $(CFLAGS) -c	 #Flags for .o output files
 # common dependencies for many classes/tests
 TEST_DEP = $(LIB_ARCHIVE)
