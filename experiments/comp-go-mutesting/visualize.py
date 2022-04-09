@@ -40,7 +40,7 @@ import sys
 
 # testcase = sys.argv[1]
 
-testcases = ["offbrand_lib", "parson", "shoco", "binn", "librope"]
+testcases = ["fsm", "gaad", "Stringy", "trie", "ujson"]
 
 results = pd.DataFrame()
 
@@ -48,10 +48,10 @@ results = pd.DataFrame()
 for testcase in testcases:
 
     wasmut = pd.read_csv(f"results/{testcase}.csv", delimiter=";")
-    mull = pd.read_csv(f"results/{testcase}-mull.csv", delimiter=";")
+    go = pd.read_csv(f"results/{testcase}-go-mutesting.csv", delimiter=";")
 
 
-    for (tool, tool_name) in ((wasmut, "wasmut"), (mull, "mull")):
+    for (tool, tool_name) in ((wasmut, "wasmut"), (go, "go")):
         tool["time"] = tool["time"] / 1000
         tool["score"] = tool["score"].astype(float).round(1)
 
@@ -62,24 +62,24 @@ for testcase in testcases:
 
     muts_per_sec_wasmut = mutants_wasmut / t_wasmut
 
-    t_mull =       mull["time"].mean()
-    tstd_mull =    mull["time"].std()
-    mutants_mull = mull["mutants"].mean()
-    score_mull =   mull["score"].mean()
+    t_go =       go["time"].mean()
+    tstd_go =    go["time"].std()
+    mutants_go = go["mutants"].mean()
+    score_go =   go["score"].mean()
 
-    muts_per_sec_mull = mutants_mull / t_mull
+    muts_per_sec_go = mutants_go / t_go
 
     row ={
         "testcase": testcase,
-        "score_mull": (score_mull), 
+        "score_go": (score_go), 
         "score_wasmut": (score_wasmut), 
-        "time_mull": (t_mull), 
-        "time_std_mull": (tstd_mull), 
+        "time_go": (t_go), 
+        "time_std_go": (tstd_go), 
         "time_wasmut": (t_wasmut), 
         "time_std_wasmut": (tstd_wasmut), 
-        "mutants_mull": int(mutants_mull),
+        "mutants_go": int(mutants_go),
         "mutants_wasmut": int(mutants_wasmut),
-        "mutants_per_sec_mull": (muts_per_sec_mull),
+        "mutants_per_sec_go": (muts_per_sec_go),
         "mutants_per_sec_wasmut": (muts_per_sec_wasmut),
         }
     
