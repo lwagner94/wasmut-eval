@@ -17,7 +17,7 @@ mutants = []
 
 for i in range(5):
     print("Run: ", i)
-    out = bash("run_wasmut.sh")
+    out = bash("run.sh")
 
     print(out)
 
