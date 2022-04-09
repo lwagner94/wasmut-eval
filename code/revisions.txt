@@ -6,3 +6,7 @@ parson https://github.com/kgabis/parson d259c9b3f90d4c75664169d9565798ef6c5b95e9
 binn https://github.com/liteserver/binn 7d0f20ff73e82273ef8b3808d5d1d7e7be5fa133
 str https://github.com/maxim2266/str 39d92193763857eff4ef273df0d7d2ed5fbe7654
 librope https://github.com/josephg/librope e2e2ae3c839f4232ded3245b96dcb813b5ed95a0
+trie https://github.com/derekparker/trie 1fdf38b7b0e910da20b2b13ebe10c09b76d3ae50
+fsm https://github.com/cocoonspace/fsm 2c75fa1451efb16e14df8d183896d7fc2bfb041b
+Stringy https://github.com/gobeam/stringy aedd444bba342ca68dbe6a24786b42c6ee6d31aa
+ujson https://github.com/olvrng/ujson 510dfd2dfec12696a0bfd824c90aca5f86756862

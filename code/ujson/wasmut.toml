@@ -1,0 +1,2 @@
+[filter]
+allowed_files = ["quote.go", "µjson.go"]
