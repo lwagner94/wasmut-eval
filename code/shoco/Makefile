@@ -47,7 +47,8 @@ shoco.wasm: tests.o $(OBJECTS) $(HEADERS)
 
 .PHONY: clean
 clean:
-	rm *.o
+	rm -f *.o
+	rm -f shoco.wasm
 
 .PHONY: js
 js: shoco.js

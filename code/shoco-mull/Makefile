@@ -1,4 +1,4 @@
-FLAGS=$(CFLAGS) -std=c99 -O3 -Wall
+FLAGS=$(CFLAGS) -std=c99 -Wall
 SOURCES=shoco.c
 OBJECTS=$(SOURCES:.c=.o)
 HEADERS=shoco.h shoco_model.h

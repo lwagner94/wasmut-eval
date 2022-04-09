@@ -74,7 +74,7 @@ plt.rcParams.update({
 
 
 
-fig, ax = plt.subplots(1, 2, figsize=set_size(350))
+fig, ax = plt.subplots(1, 2, figsize=set_size(300))
 
 
 sns.set_theme(style="ticks", palette="pastel")
@@ -95,13 +95,13 @@ fig.tight_layout()
 
 plt.savefig(f"threads_{testcase}.pgf", format="pgf")
 
-joined_time = mean_time.join(stddev_time.set_index("threads"), on="threads")
-joined_mem = mean_mem.join(stddev_mem.set_index("threads"), on="threads")
+joined_time = mean_time.join(stddev_time.set_index("threads"), on="threads").round(1)
+joined_mem = mean_mem.join(stddev_mem.set_index("threads"), on="threads").round(1)
 
 
 a = joined_time.join(joined_mem.set_index("threads"), on="threads")
 
 
-print(a.round(decimals=2))
+print(a)
 
 

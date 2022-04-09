@@ -1,0 +1,5 @@
+[filter]
+allowed_files = ["parson/parson.c"]
+
+[engine]
+map_dirs = [["tests", "tests"],]
