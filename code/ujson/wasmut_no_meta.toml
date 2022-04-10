@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["quote.go", "µjson.go"]
+[engine]
+meta_mutant = false

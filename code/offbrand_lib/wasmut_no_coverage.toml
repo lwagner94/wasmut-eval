@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["offbrand_lib/src/classes"]
+[engine]
+coverage_based_execution = false

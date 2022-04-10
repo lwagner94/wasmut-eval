@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-wasmut mutate tests -c wasmut.toml -r json
+wasmut mutate tests -c $1 -r json

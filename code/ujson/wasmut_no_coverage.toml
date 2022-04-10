@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["quote.go", "µjson.go"]
+[engine]
+coverage_based_execution = false

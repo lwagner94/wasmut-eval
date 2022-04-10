@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["trie.go"]
+[engine]
+meta_mutant = false

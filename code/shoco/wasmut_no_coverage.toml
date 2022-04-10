@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["shoco/shoco.c"]
+[engine]
+coverage_based_execution = false

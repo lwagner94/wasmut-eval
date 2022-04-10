@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["helper.go", "message.go", "stringy.go"]
+[engine]
+meta_mutant = false

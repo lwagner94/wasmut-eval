@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["fsm.go"]
+[engine]
+coverage_based_execution = false

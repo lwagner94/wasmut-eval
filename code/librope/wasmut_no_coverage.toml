@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["rope.c", "rope.h"]
+[engine]
+coverage_based_execution = false

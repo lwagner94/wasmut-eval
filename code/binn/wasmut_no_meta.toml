@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["src/binn"]
+[engine]
+meta_mutant = false

@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["src/binn"]
+[engine]
+coverage_based_execution = false

@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["fsm.go"]
+[engine]
+meta_mutant = false

@@ -1,0 +1,4 @@
+[filter]
+allowed_files = ["shoco/shoco.c"]
+[engine]
+meta_mutant = false

@@ -1,0 +1,5 @@
+[filter]
+allowed_files = ["aachuffmanutil.go", "aacparser.go", "aacsbrtables.go", "aacutils.go", "aacwindowgrouping.go", "bitreader/bitreader.go", "bitreader/errors.go"]
+[engine]
+meta_mutant = false
+coverage_based_execution = false

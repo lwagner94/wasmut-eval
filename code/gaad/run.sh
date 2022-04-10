@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-wasmut mutate test.wasm -C -r json
+wasmut mutate test.wasm -c $1 -r json

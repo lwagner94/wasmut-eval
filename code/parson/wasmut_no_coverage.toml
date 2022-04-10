@@ -1,0 +1,6 @@
+[filter]
+allowed_files = ["parson/parson.c"]
+
+[engine]
+map_dirs = [["tests", "tests"],]
+coverage_based_execution = false
