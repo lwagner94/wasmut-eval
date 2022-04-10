@@ -1,3 +1,66 @@
+#!/usr/bin/env python3
+
+testcases=( 
+    # "offbrand_lib",
+    # "parson" ,
+    # "shoco" ,
+    "binn" ,
+    # "librope" ,
+    "fsm" ,
+    # "gaad" ,
+    # "Stringy" ,
+    "trie" ,
+    "ujson" ,
+)
+
+
+import pandas as pd
+import numpy as np
+
+import sys
+
+# testcase = sys.argv[1]
+
+# testcases = ["fsm", "gaad", "Stringy", "trie", "ujson"]
+
+results = pd.DataFrame()
+
+
+for testcase in testcases:
+
+    wasmut = pd.read_csv(f"results/{testcase}.csv", delimiter=";")
+
+    
+    wasmut["time"] = wasmut["time"] / 1000
+     
+
+    # t_wasmut = wasmut["time"].mean()
+    # tstd_wasmut = wasmut["time"].std()
+    # mutants_wasmut = wasmut["mutants"].mean()
+    # score_wasmut = wasmut["score"].mean()
+
+    time = wasmut.groupby("threads", as_index=False)["time"].mean()
+    mem = wasmut.groupby("threads")["mem"].mean() / 1000
+    time = pd.DataFrame(time)
+    mem = pd.DataFrame(mem)
+
+    time = time.join(mem, on="threads")
+
+
+    print()
+    print()
+    print(testcase)
+    print(time.round(1))
+
+    norml = time.div(time.iloc[0])
+
+    results = pd.concat([results, norml])
+
+results = results.groupby("threads", as_index=False).mean()
+
+results["threads"] = results["threads"].astype(int)
+
+print(results.round(2))
 
 
 def set_size(width_pt, fraction=1, subplots=(1, 1)):
@@ -33,30 +96,6 @@ def set_size(width_pt, fraction=1, subplots=(1, 1)):
 
 
 
-import pandas as pd
-import numpy as np
-
-import sys
-
-testcase = sys.argv[1]
-
-times = pd.read_csv(f"results/{testcase}_time.csv", delimiter=";")
-mem = pd.read_csv(f"results/{testcase}_mem.csv", delimiter=";")
-
-times["time"] = times["time"] / 1000
-mem["mem"] = mem["mem"] / 1000
-
-
-mean_time = times.groupby("threads").mean().reset_index()
-# mean_time.rename(columns={"time": "mean"}, inplace=True)
-stddev_time = times.groupby("threads").std().reset_index()
-stddev_time.rename(columns={"time": "time_stddev"}, inplace=True)
-
-mean_mem = mem.groupby("threads").mean().reset_index()
-# mean_mem.rename(columns={"mem": "mean"}, inplace=True)
-stddev_mem = mem.groupby("threads").std().reset_index()
-stddev_mem.rename(columns={"mem": "mem_stddev"}, inplace=True)
-
 import matplotlib as mpl
 
 mpl.use('pgf')
@@ -74,34 +113,22 @@ plt.rcParams.update({
 
 
 
-fig, ax = plt.subplots(1, 2, figsize=set_size(300))
+fig, ax = plt.subplots(1, 2, figsize=set_size(350))
 
 
 sns.set_theme(style="ticks", palette="pastel")
 
 
-sns.barplot(x="threads", y="time", data=mean_time, color="b", ax=ax[0])
-sns.barplot(x="threads", y="mem", data=mean_mem, color="b", ax=ax[1])
+sns.barplot(x="threads", y="time", data=results, color="b", ax=ax[0])
+sns.barplot(x="threads", y="mem", data=results, color="b", ax=ax[1])
 
 ax[0].set_xlabel('Threads')
-ax[0].set_ylabel('Execution time [s]')
+ax[0].set_ylabel('Execution time')
 ax[1].set_xlabel('Threads')
-ax[1].set_ylabel('Memory use [MB]')
+ax[1].set_ylabel('Memory use')
 
-# plt.xlabel('Threads')
-# plt.ylabel('Execution Time (s)')
 
 fig.tight_layout()
 
-plt.savefig(f"threads_{testcase}.pgf", format="pgf")
-
-joined_time = mean_time.join(stddev_time.set_index("threads"), on="threads").round(1)
-joined_mem = mean_mem.join(stddev_mem.set_index("threads"), on="threads").round(1)
-
-
-a = joined_time.join(joined_mem.set_index("threads"), on="threads")
-
-
-print(a)
-
+plt.savefig(f"threads_avg.pgf", format="pgf")
 
