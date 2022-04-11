@@ -1,0 +1,12 @@
+
+file = { section };
+
+section = identifier, "{", { assignment }, "}", ";";
+assignment = identifier, ":", { expression }, ";";
+
+expression = string;
+
+string = /"[^"]*"/;
+identifier = /[a-zA-Z]+/;
+
+
