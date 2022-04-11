@@ -15,10 +15,10 @@ testcases=(
     # "binn" ,
     # "librope" ,
     # "fsm" ,
-    # "gaad" ,
+    "gaad" ,
     # "Stringy" ,
     # "trie" ,
-    "ujson" ,
+    # "ujson" ,
 )
 
 
@@ -30,7 +30,7 @@ for testcase in testcases:
         f.write(f"time;mem;threads\n")
 
     for threads in [1,2,4,8]:
-        for i in range(5):
+        for i in range(3):
             os.chdir(f"../../code/{testcase}")
             print(f"Run {testcase}: {threads} run ", i)
             out = sh.time("-v", "bash", "run.sh", "wasmut.toml", threads)

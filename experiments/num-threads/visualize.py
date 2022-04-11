@@ -6,8 +6,8 @@ testcases=(
     # "shoco" ,
     "binn" ,
     # "librope" ,
-    "fsm" ,
-    # "gaad" ,
+    # "fsm" ,
+    "gaad" ,
     # "Stringy" ,
     "trie" ,
     "ujson" ,
@@ -56,11 +56,11 @@ for testcase in testcases:
 
     results = pd.concat([results, norml])
 
-results = results.groupby("threads", as_index=False).mean()
+
 
 results["threads"] = results["threads"].astype(int)
 
-print(results.round(2))
+# print(results.round(2))
 
 
 def set_size(width_pt, fraction=1, subplots=(1, 1)):
@@ -132,3 +132,20 @@ fig.tight_layout()
 
 plt.savefig(f"threads_avg.pgf", format="pgf")
 
+
+
+avg = results.groupby("threads", as_index=False).mean()
+std = results.groupby("threads", as_index=False).std()
+
+# print(avg.round(2))
+# print(std.round(2))
+
+consolidated = pd.DataFrame()
+
+consolidated["threads"] = avg["threads"]
+consolidated["time_avg"] = avg["time"]
+consolidated["time_std"] = std["time"]
+consolidated["mem_avg"] = avg["mem"]
+consolidated["mem_std"] = std["mem"]
+
+print(consolidated.round(2))
