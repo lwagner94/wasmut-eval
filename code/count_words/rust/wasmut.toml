@@ -1,0 +1,8 @@
+[engine]
+map_dirs = [["../files", "files"],]
+
+[filter]
+allowed_functions = ["^rust::count_words"]
+
+[report]
+path_rewrite = ["^.*/wasmut/", ""]
