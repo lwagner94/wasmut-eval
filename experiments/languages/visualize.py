@@ -4,7 +4,7 @@
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv(f"results/results.csv", delimiter=";")
+data = pd.read_csv(f"results/results_no_opt.csv", delimiter=";")
 
 # data["time"] = data["time"] / 1000
 
