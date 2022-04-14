@@ -1,0 +1,1232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="syntax.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar container" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item is-size-2 has-text-weight-semibold logo is-family-code" href="./index.html">
+        wasmut
+      </a>
+    </div>
+    <div class="navbar-start">
+
+    </div>
+
+
+  </nav>
+  
+<div class="code-lines container">
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="1" href="#1">1</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-0 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-0')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+          <span class="tag is-danger is-light">
+            <a onclick="showMutant('mutants-line-1')">0/11</a>
+          </span>
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="2" href="#2">2</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust"><span class="meta function rust"><span class="meta function rust"><span class="storage type function rust">fn</span> </span><span class="entity name function rust">count_words</span></span><span class="meta function rust"><span class="meta function parameters rust"><span class="punctuation section parameters begin rust">(</span><span class="variable parameter rust">path</span><span class="punctuation separator rust">:</span> <span class="keyword operator rust">&amp;</span><span class="storage type rust">str</span></span><span class="meta function rust"><span class="meta function parameters rust"><span class="punctuation section parameters end rust">)</span></span></span></span><span class="meta function rust"> <span class="meta function return-type rust"><span class="punctuation separator rust">-&gt;</span> <span class="meta generic rust">Result<span class="punctuation definition generic begin rust">&lt;</span><span class="storage type rust">i32</span>, <span class="meta path rust">std<span class="punctuation accessor rust">::</span></span><span class="meta path rust">io<span class="punctuation accessor rust">::</span></span>Error<span class="punctuation definition generic end rust">&gt;</span></span></span> </span><span class="meta function rust"><span class="meta block rust"><span class="punctuation section block begin rust">{</span>
+</span></span></span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-1 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-1')"></button>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(2) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(1061524) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> relop_ne_to_eq: Replaced I32Ne with I32Eq</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(-2) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> binop_rotl_to_rotr: Replaced I32Rotl with I32Rotr</div>
+        <div class="is-size-6"><strong>ERROR:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="3" href="#3">3</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-2 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-2')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+          <span class="tag is-danger is-light">
+            <a onclick="showMutant('mutants-line-3')">0/86</a>
+          </span>
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="4" href="#4">4</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="storage type rust">let</span> content <span class="keyword operator rust">=</span> <span class="meta path rust">std<span class="punctuation accessor rust">::</span></span><span class="meta path rust">fs<span class="punctuation accessor rust">::</span></span>read_to_string<span class="meta group rust"><span class="punctuation section group begin rust">(</span>path</span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="keyword operator rust">?</span><span class="punctuation terminator rust">;</span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-3 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-3')"></button>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(16) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(20) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> relop_eq_to_ne: Replaced I32Eq with I32Ne</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(20) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_and: Replaced I32Or with I32And</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_xor: Replaced I32Or with I32Xor</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> relop_ne_to_eq: Replaced I32Ne with I32Eq</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_nonzero: Replaced I32Const(-2) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_and: Replaced I32Or with I32And</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_xor: Replaced I32Or with I32Xor</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(255) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> relop_gt_to_ge: Replaced I32GtU with I32GeU</div>
+        <div class="is-size-6"><strong>ERROR:</strong> relop_gt_to_le: Replaced I32GtU with I32LeU</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_nonzero: Replaced I32Const(3) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_nonzero: Replaced I32Const(3) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>ERROR:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_nonzero: Replaced I32Const(1061260) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_and: Replaced I32Or with I32And</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_xor: Replaced I32Or with I32Xor</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(520192) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(16) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(4) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(245760) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(16) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(2) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_nonzero: Replaced I32Const(15) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_and: Replaced I32Or with I32And</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_xor: Replaced I32Or with I32Xor</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_and: Replaced I32Or with I32And</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_xor: Replaced I32Or with I32Xor</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_sub_to_add: Replaced I32Sub with I32Add</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(21) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_and: Replaced I32Or with I32And</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_xor: Replaced I32Or with I32Xor</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(28) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>TIMEOUT:</strong> const_replace_zero: Replaced I64Const(0) with I64Const(42)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_nonzero: Replaced I32Const(28) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(2) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_nonzero: Replaced I32Const(1061524) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="5" href="#5">5</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-4 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-4')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="6" href="#6">6</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="storage type rust">let</span> <span class="storage modifier rust">mut</span> inword <span class="keyword operator rust">=</span> <span class="constant language rust">false</span><span class="punctuation terminator rust">;</span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-5 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-5')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="7" href="#7">7</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="storage type rust">let</span> <span class="storage modifier rust">mut</span> count <span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">0</span><span class="punctuation terminator rust">;</span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-6 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-6')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="8" href="#8">8</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-7 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-7')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+          <span class="tag is-danger is-light">
+            <a onclick="showMutant('mutants-line-8')">0/46</a>
+          </span>
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="9" href="#9">9</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="keyword control rust">for</span> c <span class="keyword operator rust">in</span> content.<span class="support function rust">chars</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span> <span class="meta block rust"><span class="punctuation section block begin rust">{</span>
+</span></span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-8 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-8')"></button>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(8) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(31) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(16777215) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> relop_gt_to_ge: Replaced I32GtU with I32GeU</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> relop_gt_to_le: Replaced I32GtU with I32LeU</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(1048320) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(16) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(8) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_and: Replaced I32Or with I32And</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_or_to_xor: Replaced I32Or with I32Xor</div>
+        <div class="is-size-6"><strong>ERROR:</strong> const_replace_nonzero: Replaced I32Const(24) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ERROR:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(25) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_sub_to_add: Replaced I32Sub with I32Add</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(31) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> relop_eq_to_ne: Replaced I32Eq with I32Ne</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(-8) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> relop_eq_to_ne: Replaced I32Eq with I32Ne</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(29) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(4) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(16) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(24) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> const_replace_nonzero: Replaced I32Const(-1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>ALIVE:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+          <span class="tag is-success is-light">
+            <a onclick="showMutant('mutants-line-9')">0/3</a>
+          </span>
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="10" href="#10">10</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">        <span class="keyword control rust">if</span> c.<span class="support function rust">is_alphanumeric</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span> <span class="meta block rust"><span class="punctuation section block begin rust">{</span>
+</span></span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-9 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-9')"></button>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(1061676) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(8) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+          <span class="tag is-success is-light">
+            <a onclick="showMutant('mutants-line-10')">0/4</a>
+          </span>
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="11" href="#11">11</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">            <span class="keyword control rust">if</span> <span class="keyword operator rust">!</span>inword <span class="meta block rust"><span class="punctuation section block begin rust">{</span>
+</span></span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-10 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-10')"></button>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(1) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(3) with I32Const(0)</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+          <span class="tag is-success is-light">
+            <a onclick="showMutant('mutants-line-11')">0/1</a>
+          </span>
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="12" href="#12">12</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">                inword <span class="keyword operator rust">=</span> <span class="constant language rust">true</span><span class="punctuation terminator rust">;</span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-11 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-11')"></button>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+          <span class="tag is-success is-light">
+            <a onclick="showMutant('mutants-line-12')">0/18</a>
+          </span>
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="13" href="#13">13</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">                count <span class="keyword operator rust">+</span><span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">1</span><span class="punctuation terminator rust">;</span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-12 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-12')"></button>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_sub_to_add: Replaced I32Sub with I32Add</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> relop_eq_to_ne: Replaced I32Eq with I32Ne</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(255) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> relop_gt_to_ge: Replaced I32GtU with I32GeU</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> relop_gt_to_le: Replaced I32GtU with I32LeU</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(3) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_shr_to_shl: Replaced I32ShrU with I32Shl</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(3) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrS</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_shl_to_shr: Replaced I32Shl with I32ShrU</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(1061260) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> relop_eq_to_ne: Replaced I32Eq with I32Ne</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> relop_gt_to_ge: Replaced I32GtU with I32GeU</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> relop_gt_to_le: Replaced I32GtU with I32LeU</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="14" href="#14">14</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">            }
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-13 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-13')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="15" href="#15">15</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">        } <span class="keyword control rust">else</span> <span class="meta block rust"><span class="punctuation section block begin rust">{</span>
+</span></span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-14 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-14')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+          <span class="tag is-success is-light">
+            <a onclick="showMutant('mutants-line-15')">0/2</a>
+          </span>
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="16" href="#16">16</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">            inword <span class="keyword operator rust">=</span> <span class="constant language rust">false</span><span class="punctuation terminator rust">;</span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-15 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-15')"></button>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(-1) with I32Const(0)</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="17" href="#17">17</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">        }
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-16 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-16')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="18" href="#18">18</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    }
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-17 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-17')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="19" href="#19">19</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-18 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-18')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="20" href="#20">20</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="support type rust">Ok</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span>count</span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-19 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-19')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+          <span class="tag is-success is-light">
+            <a onclick="showMutant('mutants-line-20')">0/8</a>
+          </span>
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="21" href="#21">21</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">}
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-20 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-20')"></button>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(24) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_add_to_sub: Replaced I32Add with I32Sub</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_zero: Replaced I32Const(0) with I32Const(42)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> const_replace_nonzero: Replaced I32Const(-2) with I32Const(0)</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_rotl_to_rotr: Replaced I32Rotl with I32Rotr</div>
+        <div class="is-size-6"><strong>SKIPPED:</strong> binop_and_to_or: Replaced I32And with I32Or</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="22" href="#22">22</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-21 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-21')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="23" href="#23">23</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust"><span class="meta function rust"><span class="meta function rust"><span class="storage type function rust">fn</span> </span><span class="entity name function rust">main</span></span><span class="meta function rust"><span class="meta function parameters rust"><span class="punctuation section parameters begin rust">(</span></span><span class="meta function rust"><span class="meta function parameters rust"><span class="punctuation section parameters end rust">)</span></span></span></span><span class="meta function rust"> </span><span class="meta function rust"><span class="meta block rust"><span class="punctuation section block begin rust">{</span>
+</span></span></span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-22 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-22')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="24" href="#24">24</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-23 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-23')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="25" href="#25">25</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-24 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-24')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="26" href="#26">26</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="storage type rust">let</span> empty_words1 <span class="keyword operator rust">=</span> <span class="support function rust">count_words</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="string quoted double rust"><span class="punctuation definition string begin rust">&quot;</span>files/empty.txt<span class="punctuation definition string end rust">&quot;</span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span>.<span class="support function rust">unwrap</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="punctuation terminator rust">;</span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-25 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-25')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="27" href="#27">27</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="storage type rust">let</span> empty_words2 <span class="keyword operator rust">=</span> <span class="support function rust">count_words</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="string quoted double rust"><span class="punctuation definition string begin rust">&quot;</span>files/empty_with_space.txt<span class="punctuation definition string end rust">&quot;</span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span>.<span class="support function rust">unwrap</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="punctuation terminator rust">;</span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-26 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-26')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="28" href="#28">28</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="storage type rust">let</span> ten_words <span class="keyword operator rust">=</span> <span class="support function rust">count_words</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="string quoted double rust"><span class="punctuation definition string begin rust">&quot;</span>files/10_words.txt<span class="punctuation definition string end rust">&quot;</span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span>.<span class="support function rust">unwrap</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="punctuation terminator rust">;</span>  
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-27 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-27')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="29" href="#29">29</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="storage type rust">let</span> single_word <span class="keyword operator rust">=</span> <span class="support function rust">count_words</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="string quoted double rust"><span class="punctuation definition string begin rust">&quot;</span>files/single_word_end.txt<span class="punctuation definition string end rust">&quot;</span></span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span>.<span class="support function rust">unwrap</span><span class="meta group rust"><span class="punctuation section group begin rust">(</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="punctuation terminator rust">;</span>      
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-28 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-28')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="30" href="#30">30</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    <span class="keyword control rust">if</span> empty_words1 <span class="keyword operator rust">!</span><span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">0</span> <span class="keyword operator rust">|</span><span class="keyword operator rust">|</span> empty_words2 <span class="keyword operator rust">!</span><span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">0</span> <span class="keyword operator rust">|</span><span class="keyword operator rust">|</span> ten_words <span class="keyword operator rust">!</span><span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">10</span> <span class="keyword operator rust">|</span><span class="keyword operator rust">|</span> single_word <span class="keyword operator rust">!</span><span class="keyword operator rust">=</span> <span class="constant numeric integer decimal rust">1</span> <span class="meta block rust"><span class="punctuation section block begin rust">{</span>
+</span></span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-29 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-29')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="31" href="#31">31</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">        <span class="meta path rust">std<span class="punctuation accessor rust">::</span></span><span class="meta path rust">process<span class="punctuation accessor rust">::</span></span>exit<span class="meta group rust"><span class="punctuation section group begin rust">(</span><span class="constant numeric integer decimal rust">1</span></span><span class="meta group rust"><span class="punctuation section group end rust">)</span></span><span class="punctuation terminator rust">;</span>
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-30 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-30')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="32" href="#32">32</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">    }
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-31 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-31')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="columns">
+    <div class="column ">
+      <div class="columns">
+        <div class="column is-half">
+
+        </div>
+        <div class="column has-text-right is-half">
+          <a id="33" href="#33">33</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="code-line column is-11">
+      <span class="source rust">}
+</span>
+    </div>
+  </div>
+  
+  <div class="columns mutants-line-32 hide-mutant-list">
+    <div class="column"></div>
+    <div class="column is-11">
+      <div class="notification">
+        <button class="delete" onclick="showMutant('mutants-line-32')"></button>
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+<script>
+  function showMutant(id) {
+    for (const e of document.getElementsByClassName(id)) {
+
+      if (e.classList.contains('show-mutant-list')) {
+        e.classList.add("hide-mutant-list");
+        e.classList.remove("show-mutant-list");
+      } else {
+        e.classList.add("show-mutant-list");
+        e.classList.remove("hide-mutant-list");
+      }
+    }
+
+  }
+</script>
+
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Generated by <strong>wasmut</strong> 0.4.0 on 2022-04-14 at 09:50:09.
+
+      </p>
+      <p>
+        wasmut is licensed under the MIT license, it's source code can be found on <a
+          href="https://github.com/lwagner94/wasmut">GitHub</a>.
+      </p>
+    </div>
+  </footer>
+  <footer id="footer">
+
+  </footer>
+
+</body>
+
+</html>
