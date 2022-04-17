@@ -1,0 +1,68 @@
+[engine]
+#    Before executing mutants, wasmut will run the wasm module without 
+#    any mutations and measure the number of cycles it takes to execute.
+#    Mutants then are allowed to execute with a timeout of 
+#    timeout = original_cycles * timeout_multiplier
+timeout_multiplier = 10.0
+
+#    Map directories into the WebAssembly runtime. 
+#    By default, modules cannot access the host's filesystem. If your module 
+#    needs to access any files,  you can use the map_dirs option to define path mappings.
+#map_dirs = [["testcases/foo", "bar"],]
+
+#    Before executing mutants, wasmut will run the wasm module without 
+#    any mutations and generate coverage information. 
+#    If `coverage_based_execution` is enabled, the execution of mutants
+#    where the mutated instruction was never executed will be skipped.
+#    Defaults to `true`.
+#coverage_based_execution = true
+
+#    If `meta_mutant` is enabled, a single mutant containing all mutations will be generated.
+#    During execution, mutations are activated by setting a flag. The benefit
+#    of this is that only a single mutant needs to be compiled by the WebAssembly runtime,
+#    and thus the execution time is reduced significantly.
+#    Defaults to `true`.
+#meta_mutant = true
+
+[filter]
+#    By default, all files and functions are allowed, which means that
+#    every wasm-instruction can potentially be mutated. 
+#    This is not very practical, so it possible to specify and allowlist
+#    for functions and/or files.
+# 
+#    In allowed_functions and allowed_files, you can specify a list of regular expressions
+#    that are used to match the function and file names. A wasm-instruction is allowed 
+#    to be mutated if its function or file matches at least one of the corresponding 
+#    regular expressions. An empty regular expression also matches everything.
+#
+#    Note: Use the wasmut list-files or wasmut list-functions commands
+#          to get a list of all functions and files in the wasm module.
+
+allowed_functions = ["^add$"]
+#allowed_file = ["src/add.c", "src/main.c"]
+
+#[operators]
+#   By default, all operators are allowed. If this is not what you want, 
+#   you can use the enabled_operators option to specify which operators 
+#   should be enabled. The option is a list of regular expressions.
+#   Use the wasmut list-operators command to get a list of all operators
+# 
+#   Example: Enable binop_sub_to_add and all relop_* operators
+#enabled_operators = ["binop_sub_to_add", "relop"]
+
+#[report]
+#    When rendering reports, `wasmut` needs to have access to the original source files.
+#    wasmut uses DWARF debug information embedded in the WebAssembly modules to locate them. 
+#    As DWARF embeds absolute paths for the source files into the module, 
+#    it can be problematic if you want to want to create reports for WebAssembly modules 
+#    that where build on another host.
+#    The `path_rewrite` option allows to specify a regular expression and a replacement 
+#    that will be applied to any source file path before creating the report.
+#    Internally, Rust's `Regex::replace` is used. 
+#    Consult https://docs.rs/regex/latest/regex/struct.Regex.html#method.replace) 
+#    for any advanced replacement scenarios.
+#
+#    Example: Replace /home/user/wasmut/ with "build"
+#    e.g. /home/user/test/main.c -> 
+#         build/test/main.c
+#path_rewrite = ["^/home/user/", "build"]
