@@ -60,5 +60,6 @@ int main(int argc, char *argv[]) {
     int empty_words2 = count_words("files/empty_with_space.txt");
     int ten_words = count_words("files/10_words.txt");  
     int single_word = count_words("files/single_word_end.txt");      
-    return empty_words1 != 0 || empty_words2 != 0 || ten_words != 10 || single_word != 1;
+    return empty_words1 != 0 || empty_words2 != 0 || 
+        ten_words != 10 || single_word != 1;
 }

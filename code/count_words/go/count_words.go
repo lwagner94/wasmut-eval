@@ -40,12 +40,17 @@ func count_words(path string) int {
 }
 
 func main() {
-	empty_words1 := count_words("../files/empty.txt")
-	empty_words2 := count_words("../files/empty_with_space.txt")
-	ten_words := count_words("../files/10_words.txt")
-	single_word := count_words("../files/single_word_end.txt")
+	empty_words1 :=
+		count_words("../files/empty.txt")
+	empty_words2 :=
+		count_words("../files/empty_with_space.txt")
+	ten_words :=
+		count_words("../files/10_words.txt")
+	single_word :=
+		count_words("../files/single_word_end.txt")
 
-	if empty_words1 != 0 || empty_words2 != 0 || ten_words != 10 || single_word != 1 {
+	if empty_words1 != 0 || empty_words2 != 0 ||
+		ten_words != 10 || single_word != 1 {
 		os.Exit(1)
 	} else {
 		os.Exit(0)
