@@ -1,0 +1,17 @@
+
+CC = clang
+CFLAGS = -g -Wall -Wextra -std=c89 -pedantic-errors -DTESTS_MAIN -O0 --coverage
+
+all: test 
+
+.PHONY: test testcpp test_hash_collisions
+test: tests.c parson.c
+	$(CC) $(CFLAGS) -o t.o -c tests.c
+	$(CC) $(CFLAGS) -o p.o -c parson.c
+	$(CC) $(CFLAGS) t.o p.o -o $@
+
+
+
+clean:
+	rm -f test *.o
+
